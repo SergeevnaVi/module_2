@@ -6,8 +6,6 @@ first_insert = random.randint(3, 20)
 def generate_password(first_insert):
     second_insert = []
     for i in range(1, first_insert):
-        if i == first_insert:
-            continue
         for j in range(i + 1, first_insert):
             if i != j and first_insert % (i + j) == 0:
                 second_insert.append((i, j))
